@@ -162,43 +162,7 @@
         let chart;
         
         // 預設資料
-        const defaultData = {
-            title: "2020 各公司營業收入與毛利率、稅前淨利率",
-            xlabel: "公司名稱",
-            ylabel: "營業收入 (億)",
-            chartType: "combo",
-            datasets: [
-                {
-                    label: "營業收入",
-                    type: "bar",
-                    data: [1762, 294, 355, 2548, 209, 108, 441, 122],
-                    backgroundColor: "rgba(54, 162, 235, 0.6)",
-                    borderColor: "rgba(54, 162, 235, 1)",
-                    borderWidth: 1
-                },
-                {
-                    label: "毛利率",
-                    type: "line",
-                    data: [28.43, 38.85, 33.55, 26.22, 33.34, 41.75, 39.01, 34.49],
-                    borderColor: "rgba(255, 159, 64, 1)",
-                    backgroundColor: "rgba(255, 159, 64, 0.1)",
-                    fill: false,
-                    tension: 0.1,
-                    yAxisID: "y1"
-                },
-                {
-                    label: "稅前淨利率",
-                    type: "line",
-                    data: [26.73, 26.11, 19.03, 11.79, 20.74, 34.06, 29.67, 19.46],
-                    borderColor: "rgba(75, 192, 192, 1)",
-                    backgroundColor: "rgba(75, 192, 192, 0.1)",
-                    fill: false,
-                    tension: 0.1,
-                    yAxisID: "y1"
-                }
-            ],
-            labels: ["海誠水泥", "嘉新水泥", "頂英水泥", "中韓建材", "山水水泥", "亞洲水泥", "遠東建材科技", "中國天瑞水泥"]
-        };
+        const defaultData = {"title": "標題_請輸入正確資料", "chartType": "combo", "datasets": [{"label": "營收", "type": "bar", "data": [1000, 2000]}, {"label": "毛利率", "type": "line", "data": [25.5, 30.2], "yAxisID": "y1"}], "labels": ["Q1", "Q2"]};
 
         // 從URL參數獲取資料
         function getDataFromURL() {
